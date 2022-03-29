@@ -39,3 +39,8 @@ ROADMAP.md
 If you're new to GitHub, take some time to understand how a repository works. Don't worry if you find it difficult, we can always help!  
 GitHub has its own [guides](https://guides.github.com/) which are really useful. Basically, you need to know how to [file an Issue](https://guides.github.com/features/issues/) and how to contribute directly to the core contents of the project by [submitting a pull request](https://guides.github.com/activities/forking/#making-a-pull-request). Please, be as clear as you can in both cases, describing what is the problem/suggestion/solution in details. Also, be sure that your suggestion/problem/solution was not addressed in another Issue before.
 
+Each part of this project should have a branch (e.g. ms_intro, ms_methods, code_data, code_analysis1), and your contributions must be made in a branch with your initials (e.g. ms_intro_gh, code_data_gh). Please only make modifications on your branch unless clearly stated otherwise. When finished, make a pull request to merge your branch with the main branch of your section (e.g. ms_intro_gh -> ms_intro) and tag a reviewer to approve the merge.
+
+**ALWAYS** make sure to pull changes before you start working, commit and stage frequently, and pull often - especially before breaks.
+
+Thank you again for contributing! **HAVE FUN!**
