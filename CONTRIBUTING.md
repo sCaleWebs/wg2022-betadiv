@@ -1,6 +1,6 @@
 # Contributing Guidelines  
 
-Hi! It's great to have you here! In this project we will explore how ecological networks in bromeliads difer between locations. It's heavily inspired on [this paper](https://www.cambridge.org/core/journals/parasitology/article/abs/beta-and-phylogenetic-diversities-tell-complementary-stories-about-ecological-networks-biogeography/2FBB62E55AAD5EE67072C14D686BF72D#article), so maybe it's a good idea to start by taking a look on it.
+Hi! It's great to have you here! In this project we will explore how ecological networks in bromeliads difer between locations. It's heavily inspired on [this paper](https://www.cambridge.org/core/journals/parasitology/article/abs/beta-and-phylogenetic-diversities-tell-complementary-stories-about-ecological-networks-biogeography/2FBB62E55AAD5EE67072C14D686BF72D#article), so maybe it's a good idea to start by taking a look at it.
 
 We will use this repository to version control a manuscript, including code and figures. Please read this document carefully if you want to make a contribution.
 
