@@ -2,6 +2,7 @@
 
 We will investigate how networks differ in space using Bs (species composition beta-diversity), Bos (interactions beta-diversity) and Bwn (metaweb beta-diversity) indexes. We will use site-level networks and coarse taxonomic resolution;
 
+- [ ] Add co-authors to repository and Zotero library
 - [ ] Data wrangling - we need network matrices and geographical data for each network; @aammd to help us organize and navigate.
 
 Site level food webs are in this folder: https://github.com/SrivastavaLab/empirical_food_webs/tree/main/03_food_web_metrics/data/pasted_matrices
