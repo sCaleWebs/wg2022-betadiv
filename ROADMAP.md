@@ -19,4 +19,5 @@ Message from Diane:
 - [ ] Present and discuss your best figures. Group to select 3-5 figures.
 - [ ] Write figures legends
 - [ ] Paper outline based on figures
+- [ ] Working plan moving forward (first draft deadline, submission deadline, journal, expectations and commitment)
 - [ ] Populate zotero with initial references
