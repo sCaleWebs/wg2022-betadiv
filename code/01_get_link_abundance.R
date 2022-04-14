@@ -242,7 +242,7 @@ mantel_loo_function <- function(site) {
 mantel_loo_function(names(beta_div_abundance)[2])
 
 mantel_all_sites <- lapply(names(beta_div_abundance), safely(mantel_loo_function))
-
+## need to figure out why 4 sites didn't work. safely is great!
 
 mantel_all_sites_df_all <- mantel_all_sites %>% 
   map(~ .x$result) %>% 
@@ -316,6 +316,20 @@ mantel_contribution_degree %>%
   geom_histogram() + 
   geom_vline(aes(xintercept = mantel_original_r), colour = 'red') +
   facet_wrap(~site_code, scales = 'free') 
+
+
+
+
+#### get better food web metrics###
+
+library(cheddar)
+library(igraph)
+
+
+prob_mat_list[[1]]
+
+
+
 
 
 
