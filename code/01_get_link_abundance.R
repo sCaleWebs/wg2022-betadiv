@@ -325,15 +325,41 @@ mantel_contribution_degree %>%
 library(cheddar)
 library(igraph)
 
+hub_score_mats <- function(mat){
+  
+  mat_graph <- igraph::graph_from_adjacency_matrix(mat)
+  
+  hub_score_vector <- hub_score(mat_graph, scale = TRUE, weights = NULL, options = arpack_defaults)
 
-prob_mat_list[[1]]
+  alpha_centrality_vector <- alpha_centrality(mat_graph)
+  
+  return(cbind(hub_score = hub_score_vector$vector, alpha_centrality_vector))
+}
+
+hub_score_all <- lapply(prob_mat_list, safely(hub_score_mats))
+
+
+hub_score_df <- hub_score_all %>% 
+  map(~ .x$result) %>% 
+  keep(~ is.null(.x) == FALSE) %>% 
+  map(~as.data.frame(.x)) %>% 
+  map_df(~rownames_to_column(.x, "bwg.name"), .id = 'site_code')
+
+mantel_hub <- mantel_contribution_degree %>% 
+  left_join(hub_score_df)
+
+
+mantel_hub %>% 
+  mutate(site_code = factor(site_code, levels = site_order)) %>% 
+  ggplot(aes(x = z_score, y = alpha_centrality_vector)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  facet_wrap(~site_code, scales = 'free') 
 
 
 
 
-
-
-1#### check errors in data ###
+#### check errors in data ###
 abundance_wider %>% 
   keep(~any(map_lgl(.x, ~typeof(.x) == "list"))) 
 
