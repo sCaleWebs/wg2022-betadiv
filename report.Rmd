@@ -102,7 +102,7 @@ bromeliad_basic %>%
              y = links/richness,
              colour = site_code)) + 
   geom_point(position = position_jitter(width = .2)) + 
-  scale_colour_viridis_d(guide = FALSE)
+  scale_colour_viridis_d(guide = "none")
 ```
 
 This is very likely the result of the presence of generalist predators in richer communities, as we can see in this plot authored by [@pierrerogy](https://github.com/pierrerogy): 
