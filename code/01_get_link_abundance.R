@@ -339,41 +339,41 @@ abundance_wider %>%
 
 #### Cardoso ###
 
-abundance_wider$CARDO
-
-table(abundance_split$CARDO$bwg_name, abundance_split$CARDO$bromeliad_id)
-  
-pivot_wider(names_from = bwg_name, values_from = abundance)
-
-abd_data %>% 
-  filter(location == "Cardoso_open") %>% 
-  filter(bwg_name == "Coleoptera.48") %>% View()
-
-
-abd_data %>% 
-  filter(bwg_name == "Coleoptera.48") %>% 
-  count(species_id, bromeliad_id, location) %>% 
-  View()
-
-
-
-#### EVTA ###
-
-abundance_wider$EVTA 
-
-abundance_split$EVTA %>% 
-  count(bwg_name, bromeliad_id) %>% 
-  filter(n>1)
-
-table(abundance_split$EVTA$bwg_name, abundance_split$EVTA$bromeliad_id)
-
-pivot_wider(names_from = bwg_name, values_from = abundance)
-
-abd_data %>% 
-  filter(location == "Elverde_tabunoco") %>% 
-  filter(bwg_name == "Coleoptera.19") %>% View()
-
-abd_data %>% 
-  filter(bwg_name == "Coleoptera.19") %>% 
-  count(species_id, bromeliad_id, location) %>% 
-  View()
+# abundance_wider$CARDO
+# 
+# table(abundance_split$CARDO$bwg_name, abundance_split$CARDO$bromeliad_id)
+#   
+# pivot_wider(names_from = bwg_name, values_from = abundance)
+# 
+# abd_data %>% 
+#   filter(location == "Cardoso_open") %>% 
+#   filter(bwg_name == "Coleoptera.48") %>% View()
+# 
+# 
+# abd_data %>% 
+#   filter(bwg_name == "Coleoptera.48") %>% 
+#   count(species_id, bromeliad_id, location) %>% 
+#   View()
+# 
+# 
+# 
+# #### EVTA ###
+# 
+# abundance_wider$EVTA 
+# 
+# abundance_split$EVTA %>% 
+#   count(bwg_name, bromeliad_id) %>% 
+#   filter(n>1)
+# 
+# table(abundance_split$EVTA$bwg_name, abundance_split$EVTA$bromeliad_id)
+# 
+# pivot_wider(names_from = bwg_name, values_from = abundance)
+# 
+# abd_data %>% 
+#   filter(location == "Elverde_tabunoco") %>% 
+#   filter(bwg_name == "Coleoptera.19") %>% View()
+# 
+# abd_data %>% 
+#   filter(bwg_name == "Coleoptera.19") %>% 
+#   count(species_id, bromeliad_id, location) %>% 
+#   View()
