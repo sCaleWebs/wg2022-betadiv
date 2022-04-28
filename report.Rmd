@@ -183,6 +183,21 @@ manteL_subset %>%
 ```
 
 
+This result is also clear when we plot species contribution to beta-diversity as a function of their out-degrees:
+
+```{r scatter scbd vs degrees}
+
+ggplot(scbd_df, aes(x = site_degree_df$degree,
+             y = scbd)) +
+  geom_point(alpha = 0.4, position = position_jitter(width = .2)) + 
+  scale_colour_viridis_d(guide = "none") + 
+  facet_wrap(vars(site)) +
+    labs(title = "Relationship between number of out-degrees and \n contribution to beta-diversity per bromeliad, per site",
+         x = "Degrees",
+         y = "SCBD")
+```
+
+
 ### Degrees and environment
 
 To further investigate the relationship between degrees and environmental filtering, we need to investigate the variation of environmental variables, and find a way to subset a part of the dataset that encompasses a representative part of this variation.
