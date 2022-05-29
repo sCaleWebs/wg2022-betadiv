@@ -204,3 +204,22 @@ To further investigate the relationship between degrees and environmental filter
 
 We hypothesize that species with low number of links will be restricted by the environment (which we can assess with spatial autocorrelation analyses and correlations with environmental variables).
 
+
+### Species richness and network uniqueness
+
+One interesting thing that can be investigated is the relationship between network uniqueness and species richness. [Dansereau et al. 2022](https://onlinelibrary.wiley.com/doi/10.1111/oik.09063) demonstrate in this paper that this relationship varies with geographical scale. We could expect something similar and we have data to test it - from local to continental scales.
+
+### Simulations
+
+[@aammd](https://github.com/aammd) has elaborated on how we can simulate expected data to formulate better hypotheses:
+
+[Click here to see the webpage about simulation](https://scalewebs.github.io/scalewebs-model-simulations/posts/2022-04-13-beta-diversity-and-species-responses/)  
+[Run the Shiny App from here](https://github.com/sCaleWebs/scalewebs-model-simulations/blob/main/simulated_network_gradients/app.R)
+
+## Moving forward
+
+The team needs to discuss more deeply the mechanisms that could lead to the patterns we described so far. The team should use the simulations and Shiny App that [@aammd](https://github.com/aammd) created to understand the role of species richness and connectance on network uniqueness.
+
+The project ROADMAP file has scpecific tasks that need to be done to move forward in the project, such as select figures, create legends and join the Zotero library. Contributors interested in co-authoring the paper should request access to the library and to be add to the repository.
+
+Gracielle is happy to contribute to the discussions, but she cannot lead the development of the paper nor should be added as a co-author as she might have conflicts of interest and does not have room to lead yet another project at this moment.
