@@ -2,7 +2,7 @@
 
 We will investigate how networks differ in space using Bs (species composition beta-diversity), Bos (interactions beta-diversity) and Bwn (metaweb beta-diversity) indexes. We will use site-level networks and coarse taxonomic resolution;
 
-- [ ] Add co-authors to repository and Zotero library
+- [x] Add co-authors to repository and [Zotero library](https://www.zotero.org/groups/4659890/scalewebs-beta_div)
 - [ ] Data wrangling - we need network matrices and geographical data for each network; @aammd to help us organize and navigate.
 
 Site level food webs are in this folder: https://github.com/SrivastavaLab/empirical_food_webs/tree/main/03_food_web_metrics/data/pasted_matrices
@@ -14,11 +14,13 @@ Message from Diane:
 > * [speciesPool_combined_data.csv](https://github.com/SrivastavaLab/empirical_food_webs/blob/main/04_combine_metrics_climate/data/speciesPool_combined_data.csv)
 * [Geographical information](https://github.com/SrivastavaLab/empirical_food_webs/04_combine_metrics_climate/data/visitSiteDict.csv)
 
-- [ ] Question feasibility of the project - which obstacles we might face in the next days?
-- [ ] Beta-diversity Bs, Bos and Bwn calculations - refer to [this code](https://github.com/graciellehigino/the-return-of-the-fleas/blob/master/code.jl). @graciellehigino to lead the analysis.
-- [ ] Creative figures time (1 hour) - explore the data however you want, come up with your three best figures. Maps, cluster analysis, gradients, relationships with [environmental data](https://github.com/SrivastavaLab/empirical_food_webs/tree/main/02_climate_data) are some ideas.
-- [ ] Present and discuss your best figures. Group to select 3-5 figures.
+- [x] Question feasibility of the project - which obstacles we might face in the next days?
+  - Result from discussions in the working group: It is not possible to calculate beta-diversity of interactions because interactions are assumed to happen based on co-occurrence.
+- [x] ~Beta-diversity Bs, Bos and Bwn calculations - refer to [this code](https://github.com/graciellehigino/the-return-of-the-fleas/blob/master/code.jl). @graciellehigino to lead the analysis.~
+- [x] Creative figures time (1 hour) - explore the data however you want, come up with your three best figures. Maps, cluster analysis, gradients, relationships with [environmental data](https://github.com/SrivastavaLab/empirical_food_webs/tree/main/02_climate_data) are some ideas.
+  - Some of the best figures are in the [working group report](https://htmlpreview.github.io/?https://github.com/sCaleWebs/wg2022-betadiv/blob/main/report.html).
+- [x] Present and discuss your best figures. Group to select 3-5 figures.
 - [ ] Write figures legends
 - [ ] Paper outline based on figures
 - [ ] Working plan moving forward (first draft deadline, submission deadline, journal, expectations and commitment)
-- [ ] Populate zotero with initial references
+- [ ] Populate Zotero with initial references
